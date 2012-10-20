@@ -1,0 +1,19 @@
+{
+  "name": "emptygif",
+  "description": "For serving a 1x1p transparent gif image",
+  "keywords": [
+    "transparent",
+    "emptygif"
+  ],
+  "author": {
+    "name": "Nguyen Van Nhu"
+  },
+  "homepage": "https://github.com/vanng822/emptygif",
+  "contributors": [],
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vanng822/emptygif.git"
+  },
+  "version": "0.0.1"
+}
