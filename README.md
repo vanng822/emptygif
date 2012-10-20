@@ -15,7 +15,7 @@ Empty gif for nodejs
 ## methods
 
 ### emptyGif(configs)
-* `configs` Array of objects. Each object contain path and maxAge. Path can be string or RegExp. maxAge is optional. For Example:
+* `configs` Array of objects. Each object contain path and maxAge. Path can be string or RegExp. maxAge is optional. For example:
 
 	[{path: '/img/empty.gif', maxAge : 86400000}]
 	
@@ -29,4 +29,4 @@ Returns
 	
 ## Property
 ### emptyGifBufferLength
-The length of the image incase it is needed for costumed headers for sendEmptyGif
+The length of the image incase it is needed for customed headers for sendEmptyGif
