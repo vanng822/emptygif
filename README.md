@@ -29,4 +29,4 @@ Returns
 	
 ## Property
 ### emptyGifBufferLength
-The length of the image incase it is needed for customed headers for sendEmptyGif
+The length of the image in case it is needed for customed headers for sendEmptyGif
