@@ -8,14 +8,23 @@ Empty gif for nodejs
 	app.use(emptygif.emptyGif([{path:'/erreport', maxAge: 0}]))
 	
 	// OR
-	app.get('/img/empty.gif', function(req, res, next) {
-		emptygif.sendEmptyGif(req, res);
+	app.get('/tracking_pixel.gif', function(req, res, next) {
+		
+		process.nextTick(function() {
+			// do tracking stuff
+		});
+		
+		emptygif.sendEmptyGif(req, res, {
+			'Content-Type' : 'image/gif',
+			'Content-Length' : emptygif.emptyGifBufferLength,
+			'Cache-Control' : 'public, max-age=0' // or specify expiry to make sure it will call everytime
+		});
 	});
 
 ## methods
 
 ### emptyGif(configs)
-* `configs` Array of objects. Each object contain path and maxAge. Path can be string or RegExp. maxAge is optional. For example:
+* `configs` Array of objects. Each object contain path and maxAge. Path can be string or RegExp. maxAge is optional, default 86400000ms. For example:
 
 	[{path: '/img/empty.gif', maxAge : 86400000}]
 	
