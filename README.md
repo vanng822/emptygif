@@ -24,9 +24,9 @@ Empty gif for nodejs
 ## methods
 
 ### emptyGif(configs)
-* `configs` Array of objects. Each object contain path and maxAge. Path can be string or RegExp. maxAge is optional, default 86400000ms. For example:
+* `configs` Array of objects. Each object contain path and maxAge. Path can be string or RegExp. maxAge is optional, default 86400000ms. Callback is for doing thing with request such as statistics. For example:
 
-	[{path: '/img/empty.gif', maxAge : 86400000}]
+	[{path: '/img/empty.gif', maxAge : 86400000, callback: function(req) { /* view counting code */}}]
 	
 Returns
 * `function(req, res, next)` middleware
